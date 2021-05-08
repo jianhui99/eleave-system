@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #FCFCFC;
+}
+
+fieldset{
+	max-width: 400px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+fieldset table{
+	padding: 20px;
+	width: 100%;
+}
+
+fieldset table tr td{
+	padding: 10px;
+}
+
+form{
+	width: 100%;
+}
+
+input{
+	width: 90%;
+	padding: 10px;
+}
+
+button{
+	padding: 5px;
+	width: 100%;
+	border: none;
+	background-color: #94E1FD;
+	
+}
+#btnLogin:focus{
+	outline: 0;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	color: black;
+  }
+  
+.hidePassword{
+	width: 16px;
+	height: 10px;
+	position: absolute;
+	top: 9.5em;
+    left: 320px;
+}
+.showPassword{
+	display: none;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 9em;
+    left: 320px;
+}
+
+
+.copyright a{
+	font-size: 16px;
+}
+
+.copyright{
+	font-size: 13px;
+	text-align: center;
+	color: gray;
+}
+
+ 

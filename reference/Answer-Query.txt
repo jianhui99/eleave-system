@@ -1,0 +1,13 @@
+1) Yes. Because it is clearly and easy to read.
+ 
+2) -  
+
+3)
+
+a. SELECT USERID,orders.ORDERID, (round(SUM(QUANTITY*UNITPRICE),2)) AS TOTALSPEND FROM orders INNER JOIN transactions ON orders.ORDERID = transactions.ORDERID GROUP BY USERID
+
+b. SELECT EXTRACT(DAY_HOUR FROM TRANSACTION_DATE) AS DAY_AND_HOUR, COUNT(*) AS NUM_OF_TRANSACTIONS FROM `transactions` GROUP BY TRANSACTION_DATE
+
+c. SELECT USERID,orders.ORDERID, ITEM, GROUP_CONCAT(ITEM) AS Buying_Item FROM orders INNER JOIN transactions ON orders.ORDERID = transactions.ORDERID WHERE USERID = 1
+
+d. SELECT round(AVG(QUANTITY*UNITPRICE),2) FROM transactions INNER JOIN orders ON orders.ORDERID = transactions.ORDERID GROUP BY orders.USERID
